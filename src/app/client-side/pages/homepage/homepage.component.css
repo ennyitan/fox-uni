@@ -1,0 +1,46 @@
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.blackBg {
+    background-color: rgb(2, 2, 43)!important;
+}
+.orangeBg {
+    background-color: orangered;
+}
+.offers{
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+.offerImage,.video{
+    object-fit: contain;
+    width: 100%;
+}
+.offerDetails{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.parallax{
+    background-image: linear-gradient(rgba(230, 70, 21, 0.5), rgba(202, 93, 25, 0.9)), url(../../../../assets/images/parallax.webp);
+    /* min-height: 100vh;  */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 7em;
+}
+.fox-uni{
+    display: grid;
+    gap: 50px;
+    grid-template-columns: 1fr 1fr;
+}
+.parallax-data{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.fs-40{
+    font-size: 40px;
+}
+.fs-18{
+    font-size: 18px;
+}

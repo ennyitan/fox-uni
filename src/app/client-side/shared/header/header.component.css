@@ -1,0 +1,21 @@
+.d-nav-link:hover{
+    color: orangered;
+}
+.d-nav-active{
+    color: orangered!important;
+}
+.d-nav-active:hover{
+    color: white!important;
+}
+.d-bg{
+    background-color: rgb(2, 2, 43)!important;
+}
+.col-wht{
+    color: white;
+}
+.f-18{
+    font-size: 38px;
+}
+.f-12{
+    font-size: 20px;
+}

@@ -1,0 +1,63 @@
+<app-slides></app-slides>
+<div class="cards">
+    <app-cards *ngFor="let cardInfo of cardArray" [headerText]="cardInfo.headerText" [details]="cardInfo.details" [class]="cardInfo.bgColor"></app-cards>
+</div>
+
+<section class="offers container">
+<div class="p-4" >
+    <h3>What We Offer</h3>
+    <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word.</p>
+
+<div class="offerDetails">
+    <div class="offer">
+        <img src="" alt="">
+        <h3>Safety First</h3>
+        <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+    </div>
+    <div class="offer">
+        <img src="" alt="">
+        <h3>Regular Classes</h3>
+        <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+    </div>
+    <div class="offer">
+        <img src="" alt="">
+        <h3>Certified Teachers</h3>
+        <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+    </div>
+    <div class="offer">
+        <img src="" alt="">
+        <h3>Sufficient Classrooms</h3>
+        <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+    </div>
+    <div class="offer">
+        <img src="" alt="">
+        <h3>Creative Lessons</h3>
+        <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+    </div>
+    <div class="offer">
+        <img src="" alt="">
+        <h3>Sports Facilities</h3>
+        <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+    </div>
+</div>
+</div>
+<img class="offerImage" src="../../../../assets/images/offersImage.webp" alt="">
+</section>
+<!-- parallax section -->
+<div class="parallax">
+    <div class="fox-uni">
+        <img class="video" src="../../../../assets/images/videobg.webp" alt="">
+    <div class="fox-details">
+        <h2>Fox University</h2>
+        <p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.<br>
+        A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+    </div>
+  
+    </div>
+    <div class="parallax-data text-center pt-5 text-white font-bold">
+        <div *ngFor="let userData of parallax">
+            <h3 class="fs-40">{{userData?.Data}}</h3>
+            <p class="fs-18">{{userData?.title}}</p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,36 @@
+.slide-details{
+    width: 40%;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+}
+.orange{
+    background-color: rgb(249, 108, 0);
+}
+.slide-image{
+    width: 100%;
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.fs-28{
+    font-size: 48px;
+}
+.fs-20{
+font-size: 20px;
+}
+
+.carousel-1 {
+    background-image: linear-gradient(rgba(13, 17, 40, 0.2), rgba(253, 97, 0, 0.5)), url(../../../../assets/images/college1.webp);
+}
+
+.carousel-2 {
+    background-image: linear-gradient(rgba(13, 17, 40, 0.2), rgba(253, 97, 0, 0.5)), url(../../../../assets/images/college2.webp);
+}
+
+.ab{
+    position: absolute;
+}
+.rel{
+    position: relative;
+}
