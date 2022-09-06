@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { ApiService } from 'src/app/services/api.service';
+import { CommentsService } from 'src/app/services/comments.service';
 
 @Component({
   selector: 'app-homepage',
@@ -9,39 +11,77 @@ import { ApiService } from 'src/app/services/api.service';
 export class HomepageComponent implements OnInit {
   cardArray : any[] = []
   parallax :any[]=[]
+  
+  commentForm!:FormGroup
+  registered = false
 
-  constructor(private _apiService: ApiService) { }
+  constructor(private _apiService: ApiService, private commentService: CommentsService) { }
 
   ngOnInit(): void {
+    this.onCreateComment()
     this.cardArray = [
       {
-        headerText: 'header1',
-        details: 'whatever',
+        headerText: 'Certified Teachers',
+        details: 'Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.',
         bgColor: 'orangeBg'
       },
       {
-        headerText: 'header2',
-        details: 'what is it',
+        headerText: 'Special Education',
+        details: 'Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.',
         bgColor: 'blackBg'
       },
       {
-        headerText: 'header3',
-        details: 'whatever',
+        headerText: 'Book & Library',
+        details: 'Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.',
         bgColor: 'orangeBg'
       },
       {
-        headerText: 'header4',
-        details: 'what is it',
+        headerText: 'Sports Club',
+        details: 'Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.',
         bgColor: 'blackBg'
 
       }
     ]
     
-    this._apiService.getData().subscribe((data)=>{
-        console.log(data)
-        this.parallax = data
-        console.log(this.parallax)
+    this.parallax = [
+      {
+        dNumber: 30,
+        title: 'Certified Teachers'
+      },
+      {
+        dNumber: 410,
+        title: 'Students'
+      },
+      {
+        dNumber: 18,
+        title: 'Courses'
+      },
+       {
+        dNumber: 320,
+        title: 'Award Won'
+      },
+    ]
+  
+  }
+  onCreateComment(){
+    this.commentForm = new FormGroup({
+      firstName: new FormControl('', [Validators.required]),
+      lastName: new FormControl('', [Validators.required]),
+      email: new FormControl('', [Validators.required, Validators.email]),
+      body: new FormControl('', [Validators.required, Validators.minLength(3)]),
+      phone: new FormControl('', [Validators.required, Validators.pattern("[0-9 ]{12}")])
     })
   }
-
+  commentSubmit(dComment:any){
+    this.registered = true
+   if(this.commentForm.invalid){
+    return 
+   }else {
+    console.log(dComment)
+    // dComment.postId = 2
+    this.commentService.createComment(dComment).subscribe(data=>{
+      console.log(data)
+    })
+   }
+  }
 }

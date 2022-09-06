@@ -14,6 +14,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { SlidesComponent } from './shared/slides/slides.component';
 import { CardsComponent } from './shared/cards/cards.component';
 import { ServicesComponent } from './pages/services/services.component';
+import { ReviwsComponent } from './shared/reviws/reviws.component';
+import { BlogComponent } from './shared/blog/blog.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,8 @@ import { ServicesComponent } from './pages/services/services.component';
     SlidesComponent,
     CardsComponent,
     ServicesComponent,
+    ReviwsComponent,
+    BlogComponent
   ],
   imports: [
     CommonModule,

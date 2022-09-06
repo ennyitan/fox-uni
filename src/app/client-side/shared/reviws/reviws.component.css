@@ -1,0 +1,167 @@
+.carousel-bg{
+    background: #E5E5E5;
+  }
+  .bold{
+      font-weight: bold;
+      color: #3E3E3E;
+  }
+  .clientSay{
+      font-size: 2rem;
+      font-weight: bold;
+      color: #3E3E3E;
+      line-height: 46.8px
+  }
+  .recommend-txt{
+      font-size: 20px;
+      padding-bottom: 1rem;
+  }
+  .description-txt{
+      color:#626262;
+      font-size: 16px;
+      line-height: 27.2px;
+  }
+  .name{
+      font-size: 18px;
+      color: #282F65;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+  }
+
+.orange-review{
+    color: rgba(240, 168, 0, 1);
+}
+.orange-review{
+    position: relative;
+    max-width: 100px;
+  }
+.orange-review::after{
+    content:" ";
+    height: 2px;
+    width: 50px;
+    background: linear-gradient(90deg, #F0A800 0%, rgba(240, 168, 0, 0) 100%);
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 115%;
+  }
+.quote, .quote-two{
+    position: absolute;
+    top: -5%;
+    right: 20%;
+    }
+.quote-two{right: 25%;}
+
+.w-30 {
+    width: 30%;
+}
+
+.ml-3 {
+    margin-left: 2rem;
+}
+
+.w-65 {
+    width: 65%;
+}
+
+.desktop-arrows {
+  position: absolute;
+  bottom: 0%;
+  right: 30%;
+}
+
+.right-arrow, .left-arrow{
+  font-size: 3rem;
+  background: transparent !important;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.inactive_arrow {
+  opacity: 0.5;
+}
+
+.inactive_arrow i {
+  font-size: 2rem !important;
+}
+
+
+.w-114{
+    width: 114px;
+}
+
+.w-100{
+  width: 100px;
+}
+
+.my-60{
+  margin: 60px 0px;
+}
+
+.my-80{
+  margin: 80px 0px;
+}
+
+.align-center{
+  align-items: center;
+}
+
+
+.fs-40{
+  font-size: 40px;
+}
+.fs-18{
+  font-size: 18px;
+}
+.display{
+  display: block;
+}
+
+.slide-img{
+    margin: 0 auto;
+    border-radius: 50%;
+  height: 10rem;
+}
+.d-gap{
+  gap: 40px;
+}
+.slide-img-bg{
+ 
+  height: 10rem;
+  
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.w-40{
+  width: 40%;
+}
+@media screen and (max-width: 950px){
+  .slide-img-bg{
+    
+    height: 5rem;
+  }
+}
+
+@media screen and(max-width: 750px) {
+    .d-none-md {display: none;}
+    .w-100-md {width: 100% !important;}
+    .text-container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .md-display {
+        display: block !important;
+    }
+    .carousel-bg{
+        background-color: white;
+    }
+    .orange-review,.clientSay{
+        padding-left: 2rem;
+    }
+    
+}
+@media screen and (max-width: 400px){
+  .quote-two{
+    right: 27%;
+  }
+}

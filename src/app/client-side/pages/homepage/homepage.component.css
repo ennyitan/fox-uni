@@ -44,3 +44,89 @@
 .fs-18{
     font-size: 18px;
 }
+.forImg{
+    object-fit: contain;
+    width: 100%;
+}
+.shift{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.d-grid{
+    display: grid;
+    grid-template-columns: repeat(4 1fr);
+}
+.orange{
+    background-color: rgb(249, 108, 0);
+}
+.orange-txt{
+    color: rgb(249, 108, 0) ;
+}
+.grey{
+    background-color: rgb(247, 247, 247);
+}
+.quote-request{
+    background-image: linear-gradient(rgba(230, 70, 21, 0.5), rgba(202, 93, 25, 0.9)), url(../../../../assets/images/contact.webp);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 7em;
+}
+input {
+    outline: 0;
+    border: 0;
+    border-width: 0 0 2px;
+    border-color: rgb(247, 247, 247)
+  }
+.cal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgb(249, 108, 0);
+    object-fit: contain;
+    width: 65%;
+    height: 65%;
+}
+.border-radius{
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 400px){
+    .forQuote{
+      width: 100%;
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .offerImage{
+        display: none;
+    }
+    .offerDetails{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .offers{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .fox-uni{
+        display: grid;
+      
+        grid-template-columns: 1fr;
+    }
+    .video{
+        display: none;
+    }
+    .parallax-data{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .headings{
+        font-size: 30px;
+    }
+  }
+ 

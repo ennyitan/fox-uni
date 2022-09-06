@@ -34,3 +34,6 @@ font-size: 20px;
 .rel{
     position: relative;
 }
+.border-radius{
+    border-radius: 20px;
+}
