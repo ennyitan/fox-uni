@@ -1,14 +1,14 @@
 .d-nav-link:hover{
-    color: orangered;
+    color: rgb(2, 2, 43)!important;
 }
 .d-nav-active{
-    color: orangered!important;
+    color: rgb(2, 2, 43)!important
 }
 .d-nav-active:hover{
     color: white!important;
 }
 .d-bg{
-    background-color: rgb(2, 2, 43)!important;
+    background-color: #f96c00 !important
 }
 .col-wht{
     color: white;
@@ -22,4 +22,10 @@
 .d-input{
     outline: 0;
     border: 0;
+}
+
+@media screen and (max-width: 760px) {
+    .sm-hide {
+        display: none;
+    }
 }
