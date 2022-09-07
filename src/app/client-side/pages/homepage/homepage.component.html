@@ -9,7 +9,7 @@
   ></app-cards>
 </div>
 
-<section class="offers container">
+<section class="offers container" id="about">
   <div class="p-4">
     <h3>What We Offer</h3>
     <p>
@@ -101,7 +101,7 @@
   </div>
 </div>
 
-<div class="courses">
+<div class="courses" id="courses">
   <div class="text-center">
     <h2 class="fs-40 mb-4 headings">Our Courses</h2>
     <p class="fs-18 text-center mx-auto separated-they-live">
@@ -213,7 +213,7 @@
   </div>
 </div>
 
-<div class="teachers grey p-5">
+<div class="teachers grey p-5 " id="staff">
     <div class="text-center">
         <h2 class="fs-40 text-center mb-4 headings">Certified Teachers</h2>
         <p class="fs-18 mx-auto separated-they-live">
@@ -281,7 +281,7 @@
         <h1 class="fs-40 mb-3 text-white headings">Request A Quote</h1>
     <p class="mb-5 fs-18 text-white ">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
     <div class="row">
-        <form [formGroup]="commentForm" (ngSubmit)="commentSubmit(commentForm.value)">
+        <form [formGroup]="commentForm" class="pb-2" (ngSubmit)="commentSubmit(commentForm.value)">
             <div class="row">
             <div class="form-group col-sm-6 mb-5">
               
@@ -318,7 +318,7 @@
                  
               </div>
               <app-button
-              class="btn orange text-white rounded col-sm-6 mb-5"
+              [class]="'btn orange text-white rounded col-sm-6'"
               text="Request A Quote"
             ></app-button>
            
