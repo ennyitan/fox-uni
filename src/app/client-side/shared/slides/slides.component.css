@@ -1,5 +1,6 @@
 .slide-details{
     width: 40%;
+    min-width: 280px;
     top: 50%;
     left: 10%;
     transform: translateY(-50%);
@@ -16,8 +17,20 @@
 .fs-28{
     font-size: 48px;
 }
+
 .fs-20{
-font-size: 20px;
+    font-size: 20px;
+    }
+    
+
+@media screen and (max-width: 760px) {
+    .fs-28 {
+        font-size: 28px;
+    }
+
+    .fs-20{
+        font-size: 18px;
+    }        
 }
 
 .carousel-1 {

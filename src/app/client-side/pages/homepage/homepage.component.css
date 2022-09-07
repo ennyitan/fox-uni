@@ -27,8 +27,9 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 7em;
+    padding: 2rem;
 }
+
 .fox-uni{
     display: grid;
     gap: 50px;
@@ -47,12 +48,20 @@
 .forImg{
     object-fit: contain;
     width: 100%;
+    margin-bottom: 16px;
 }
 .shift{
     display: flex;
     justify-content: space-between;
     gap: 20px;
 }
+
+@media screen and (max-width: 760px) {
+    .shift {
+        display: block;
+    }
+}
+
 .d-grid{
     display: grid;
     grid-template-columns: repeat(4 1fr);
@@ -94,9 +103,9 @@ input {
     border-radius: 20px;
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 650px){
     .forQuote{
-      width: 100%;
+      width: 100% !important;
     }
     .cards{
         display: grid;
@@ -123,10 +132,35 @@ input {
     }
     .parallax-data{
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
     }
     .headings{
         font-size: 30px;
     }
   }
  
+  .courses {
+    padding: 1rem ;
+  }
+
+  .separated-they-live {
+    width: 80%;
+    min-width: 200px;
+    max-width: 600px;
+  }
+
+  @media screen and (min-width: 760px) {
+    .courses {
+        padding: 2rem;
+    }
+
+    .parallax {
+        padding: 7rem;
+    }
+  }
+
+  @media screen and (max-width: 650px) {
+    .row > .col-sm {
+        margin-bottom: 20px;
+    }
+  }
